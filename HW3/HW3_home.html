@@ -23,21 +23,25 @@
             margin-left: 60; 
             top: 270px; 
             left: 200px;
-            font-size:46;
+            font-size:52;
             position: absolute;
            	resize: none;
-           	width:500px;
+           	width:600px;
         }
         .parallax {
 
   			background-image: url("./Images/Restaurant.jpeg");
-  			min-width: 800px;
-  			min-height:400px;
-  			margin-left: 60; 
-  			background-attachment: fixed;
-  			background-position: fixed;
-  			background-repeat: no-repeat;
-  
+  			height: 600px;
+    		width: 600px;
+  			position: relative;
+    		margin-left: 60px;
+    		padding-top: 50px;
+    		padding-right: 350px;
+    		background-attachment: fixed;
+    		background-position: fixed;
+    		background-repeat: no-repeat;
+    		background-size: cover;
+
 		}
 		.flexcontainer {
     		display: flex;
@@ -51,7 +55,7 @@
 		}
 		h1{
 			color:#02077c;
-			margin-left: 400px;
+			margin-left: 500px;
 			margin-top: 30px;
 			width:200px;
 		}
@@ -59,31 +63,46 @@
 			text-decoration-line: underline;
   			text-decoration-style: double;
   			color:#860a83;
-  			font-family: "sans-serif,serif;";
-  			margin-left: 400px;
+  			margin-left: 350px;
   			margin-top:25px;
-  			width:300px;
+  			width:400px;
+  			font-family: "Comic Sans MS", "Comic Sans";
 		}
-		a{
+		.links{
 			text-decoration: none;
 			padding-right: 15px;
 			font-size: 20px;
+		}
+		.button{
+			border-style: double;
+			background-color: white;
+			width:160px;
+			padding:10px;
+			padding-left:20px;
+			margin-left: 0; 
+            top: 350px; 
+            left: 550px;
+            position: absolute;
+           	resize: none;
 		}
 	</style>
 </head>
 <body>
 <h1>Trojan Café</h1>
 <div class="menutab">
-	<a href="./HW3_home.html" style="margin-left: 60px">Home</a>
-	<a href="#italian">Italian</a>
-	<a href="#indian">Indian</a>
-	<a href="#japanese">Japanese</a>
-	<a href="#desserts">Desserts</a>
-	<a href="./welcome.html" target="_blank">About</a>
-	<a href="./welcome.html" target="_blank">Contact</a>
+	<a class="links" href="./HW3_home.html" style="margin-left: 60px">Home</a>
+	<a class="links" href="#italian">Italian</a>
+	<a class="links" href="#indian">Indian</a>
+	<a class="links" href="#japanese">Japanese</a>
+	<a class="links" href="#desserts">Desserts</a>
+	<a class="links" href="./welcome.html" target="_blank">About</a>
+	<a class="links" href="./welcome.html" target="_blank">Contact</a>
 </div>
-<div class="parallax"></div><div>
-<div class="scenic">Enjoy the Scenic View!!</div>
+<div class="parallax">
+<div>
+	<div class="scenic">Enjoy the Scenic View!!</div>
+	<div class="button">Book Your Reservation</div>
+</div>
 </div>
 <h3>Explore Our Delicious Cuisines</h3>
 
